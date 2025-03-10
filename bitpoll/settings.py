@@ -42,6 +42,8 @@ STATIC_URL = "/static/"
 
 ALLOWED_HOSTS = []
 
+DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
 TEMPLATE_ALLOWABLE_SETTINGS_VALUES = [
     "ALLOW_CUSTOM_SLUGS",
     "SITE_NAME",
@@ -99,6 +101,7 @@ MIDDLEWARE = [
     "django.contrib.auth.middleware.AuthenticationMiddleware",
     "django.contrib.messages.middleware.MessageMiddleware",
     "django.middleware.clickjacking.XFrameOptionsMiddleware",
+    'allauth.account.middleware.AccountMiddleware',
     "django.middleware.locale.LocaleMiddleware",
     "django-simple-csp.middleware.csp.CSPMiddleware",
     "pipeline.middleware.MinifyHTMLMiddleware",
@@ -279,8 +282,6 @@ LANGUAGE_CODE = "de-de"
 TIME_ZONE = "Europe/Berlin"
 
 USE_I18N = True
-
-USE_L10N = True
 
 USE_TZ = True
 

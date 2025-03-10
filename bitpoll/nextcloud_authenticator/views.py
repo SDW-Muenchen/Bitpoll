@@ -1,7 +1,7 @@
 import requests
 import xml.etree.ElementTree as ET
 from allauth.socialaccount import app_settings
-from allauth.socialaccount.providers.nextcloud.views import NextCloudAdapter
+from allauth.socialaccount.providers.nextcloud.views import NextCloudOAuth2Adapter
 from allauth.socialaccount.providers.oauth2.views import (
     OAuth2CallbackView,
     OAuth2LoginView,
@@ -10,7 +10,7 @@ from allauth.socialaccount.providers.oauth2.views import (
 from .provider import CustomNextCloudProvider
 
 
-class CustomNextCloudAdapter(NextCloudAdapter):
+class CustomNextCloudAdapter(NextCloudOAuth2Adapter):
     """
     Extended NextCloud OAuth2:
 
