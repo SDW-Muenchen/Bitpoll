@@ -1,7 +1,7 @@
 django>=5.0,<5.1
 django-widget-tweaks
 django-markdownify
-django-simple-csp
+django-simple-csp==0.3.dev1
 libsasscompiler
 django-pipeline
 django-friendly-tag-loader
@@ -9,7 +9,7 @@ django-encrypted-model-fields
 caldav
 icalendar
 django-token-bucket>=0.2.2
-django-allauth
+django-allauth>=65.4.1
 uwsgi
 mysqlclient
 djangorestframework

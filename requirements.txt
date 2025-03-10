@@ -4,9 +4,10 @@
 #
 #    pip-compile --output-file=requirements.txt requirements.in
 #
-asgiref==3.7.2
+asgiref==3.8.1
     # via
     #   django
+    #   django-allauth
     #   django-stubs
 bleach[css]==6.0.0
     # via django-markdownify
@@ -19,11 +20,7 @@ cffi==1.15.1
 charset-normalizer==3.2.0
     # via requests
 cryptography==41.0.3
-    # via
-    #   django-encrypted-model-fields
-    #   pyjwt
-defusedxml==0.7.1
-    # via python3-openid
+    # via django-encrypted-model-fields
 django==5.0.11
     # via
     #   -r requirements.in
@@ -35,7 +32,7 @@ django==5.0.11
     #   django-stubs-ext
     #   django-token-bucket
     #   djangorestframework
-django-allauth==0.55.0
+django-allauth==65.4.1
     # via -r requirements.in
 django-encrypted-model-fields==0.6.5
     # via -r requirements.in
@@ -75,19 +72,15 @@ markdown==3.4.4
     # via django-markdownify
 mysqlclient==2.2.0
     # via -r requirements.in
-oauthlib==3.2.2
-    # via requests-oauthlib
+psycopg2==2.9.10
+    # via -r requirements.in
 pycparser==2.21
     # via cffi
-pyjwt[crypto]==2.8.0
-    # via django-allauth
 python-dateutil==2.8.2
     # via
     #   icalendar
     #   recurring-ical-events
     #   vobject
-python3-openid==3.2.0
-    # via django-allauth
 pytz==2023.3
     # via
     #   caldav
@@ -98,12 +91,7 @@ pytz==2023.3
 recurring-ical-events==2.0.2
     # via caldav
 requests==2.31.0
-    # via
-    #   caldav
-    #   django-allauth
-    #   requests-oauthlib
-requests-oauthlib==1.3.1
-    # via django-allauth
+    # via caldav
 six==1.16.0
     # via
     #   bleach

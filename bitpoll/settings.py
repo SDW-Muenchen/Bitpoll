@@ -101,6 +101,7 @@ MIDDLEWARE = [
     "django.contrib.auth.middleware.AuthenticationMiddleware",
     "django.contrib.messages.middleware.MessageMiddleware",
     "django.middleware.clickjacking.XFrameOptionsMiddleware",
+    'allauth.account.middleware.AccountMiddleware',
     "django.middleware.locale.LocaleMiddleware",
     "django-simple-csp.middleware.csp.CSPMiddleware",
     "pipeline.middleware.MinifyHTMLMiddleware",
